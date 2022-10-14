@@ -1,0 +1,451 @@
+@font-face {
+    font-family:'futura';
+    src:url('../fonts/FuturaBookC.ttf') format('truetype');
+}
+
+* {
+    padding:0;
+    margin:0;
+}
+
+a {
+    text-decoration:none;
+    color:inherit;
+}
+
+ul {
+    list-style:none;
+}
+
+
+
+
+body {
+    font-family:'futura', sans-serif;
+    font-weight:700;
+    text-transform:uppercase;
+}
+
+.section__inner {
+    padding:5% 7% 9% 5%;
+    box-sizing:border-box;
+    max-width:1440px;
+    margin:0 auto;
+}
+
+.section1,
+.section3,
+.section5 {
+    background:#4C3D74;
+    color:#fff;
+}
+
+.section1__header {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+.section1__header__intensive {
+    font-size:14px;
+}
+
+.header__navigation {
+    display:flex;
+    flex-direction:row;
+    font-size:14px;
+    gap:27px;
+}
+
+.section1__content {
+    display:flex;
+    flex-direction:row;
+    margin-top:100px;
+}
+
+.section1__text {
+    display:flex;
+    flex-direction:column;
+    gap:2em;
+}
+
+h4 {
+    font-size:20px;
+}
+
+h2 {
+    font-size:50px;
+}
+
+.section1__links_wrapper {
+    display:flex;
+    flex-direction:row;
+    gap:1em;
+}
+
+.rounded_link {
+    background:#A387C4;
+    font-size:16px;
+    color:#fff;
+    padding:20px 65px;
+    border-radius:100px;
+    display:block;
+    text-align:center;
+    border:3px solid transparent;
+    transition:0.15s;
+}
+
+.rounded_link:hover {
+    background:transparent;
+    border:3px solid #a387c4;
+}
+
+.rounded_link-alt {
+    background:transparent;
+    border:3px solid #a387c4;
+}
+
+.rounded_link-alt:hover {
+    background:#a387c4 !important;
+}
+
+.section1__emoji {
+    margin-top:-100px;
+}
+
+.section2,
+.section4 {
+    background:#fff;
+    color:#4C3D74;
+}
+
+.section__title {
+    text-align:center;
+    margin-bottom:48px;
+}
+
+.section2__title,
+.section4__title {
+    color:#504178;
+}
+
+.section2__blocks {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    gap:65px;
+}
+
+.section2__block {
+    font-weight:500;
+    font-size:16px;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    border:3px solid #4C3D74;
+    background:#F2EEF7;
+    padding:30px 30px 30px 60px;
+    border-radius:30px;
+}
+
+.section2__block__img {
+    margin-left:-100px;
+    width:84px;
+}
+
+.section__bottom_text {
+    margin-top:43px;
+    display:flex;
+    flex-direction:row;
+    align-items:flex-start;
+    justify-content:space-around;
+    gap:60px;
+    font-size:20px;
+}
+
+.supervillain-adaptive {
+    align-self:flex-end;
+}
+
+.section2__link:hover,
+.section4__link:hover {
+    color:#4C3D74;
+}
+
+.section3__blocks {
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:25px;
+    margin-bottom:160px;
+}
+
+.section3__blocks__block {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    font-size:16px;
+    font-weight:500;
+    gap:30px;
+}
+
+.section3__block__img {
+    width:60px;
+}
+
+.vorman__content {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    gap:45px;
+}
+
+.vorman__text {
+    font-weight:500;
+    font-size:16px;
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+.vorman__blocks {
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:20px;
+}
+
+.section4__inner,
+.section2__inner {
+    padding-bottom:0;
+}
+
+.lessons_list {
+    display:flex;
+    flex-direction:column;
+    font-size:18px;
+    font-weight:500;
+}
+
+.lessons_list:first-child {
+    border-top:3px solid #4C3D74;
+}
+
+.lessons_list__lesson {
+    padding:14px 0;
+    border-bottom:3px solid #4C3D74;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.lessons_list__plus_button {
+    background:none;
+    border:none;
+    font-size:30px;
+    line-height:0;
+}
+
+.tariffs_list {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    gap:38px;
+}
+
+.tariff {
+    background:#f2eef7;
+    color:#4C3D74;
+    border:3px solid #4C3D74;
+    padding:60px 36px 0 36px;
+    border-radius:30px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    font-weight:500;
+    font-size:16px;
+    position:relative;
+}
+
+.tariff__emoji {
+    position:absolute;
+    top:-50px;
+    right:-50px;
+}
+
+.section__h5 {
+    font-size:16px;
+    font-weight:700;
+}
+
+.features {
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    align-items:flex-start;
+}
+
+.feature-minus {
+    text-decoration:line-through;
+}
+
+.feature-plus::marker {
+    content:"+ ";
+    display:block;
+    font-weight:700;
+    font-size:20px;
+}
+
+.feature-minus::marker {
+    content:"- ";
+    display:block;
+    font-weight:700;
+    font-size:20px;
+}
+
+.section5__link.rounded_link {
+    margin-bottom:-30px;
+}
+
+.section5__link.rounded_link:hover {
+    background:#4C3D74;
+}
+
+.section5__stories {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    gap:30px;
+    margin-top:95px;
+}
+
+.section5__stories__link {
+    min-width:173px;
+}
+
+@media screen and (max-width:1279px) {
+
+    .section__bottom_text {
+        gap:5%;
+    }
+
+    .supervillain-adaptive {
+        width:20%;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .vorman__content,
+    .section1__content,
+    .tariffs_list,
+    .section5__stories,
+    .section2__blocks {
+        flex-wrap:wrap;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .section1__content {
+        text-align:center;
+    }
+
+    .section1__links_wrapper {
+        justify-content:center;
+    }
+
+    .section1__emoji {
+        margin:0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .image-adaptive {
+        width:100%;
+        align-self:center;
+        justify-self:center;
+    }
+
+    .supervillain-adaptive {
+        width:60%;
+        align-self:center;
+        justify-self:center;
+    }
+
+    .section2__blocks,
+    .section3__blocks,
+    .section5__stories,
+    .section__bottom_text {
+        flex-wrap:wrap;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .mobile_hidden {
+        display:none;
+    }
+
+    .section1__header,
+    .section1__text {
+        text-align:center;
+        justify-content:center;
+    }
+
+    .section1__links_wrapper {
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .rounded_link {
+        width:100%;
+    }
+
+    .section1__emoji {
+        margin-top:0;
+    }
+
+    .section2__block {
+        display:flex;
+        flex-direction:column;
+        align-items:flex-start;
+        padding:30px;
+    }
+
+    .section2__block__img {
+        display:block;
+        margin-top:-75px;
+        margin-left:-40px;
+        width:58px;
+        height:58px;
+    }
+
+    .section2__block-odd__img {
+        align-self:flex-end;
+        margin-right:-40px;
+    }
+
+    .section2__block__p {
+        margin-top:20px;
+    }
+
+    .section3__blocks {
+        display:flex;
+        flex-direction:column;
+    }
+
+    .tariffs_list {
+        gap:68px;
+    }
+
+    .tariff__emoji {
+        right:-35px;
+    }
+
+    .section5__link {
+        padding:20px 0;
+    }
+
+    .inst_link {
+        display:block;
+    }
+}
